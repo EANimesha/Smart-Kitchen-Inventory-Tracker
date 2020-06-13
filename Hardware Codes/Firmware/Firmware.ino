@@ -8,9 +8,9 @@
 #define FSR_1_PIN_1	12
 #define FSR_2_PIN_1	13
 #define FSR_3_PIN_1	14
-#define LEDR_1	1
-#define LEDR_2	3
-#define LEDR_3	4
+#define LED_1	1
+#define LED_2	3
+#define LED_3	4
 
 
 
@@ -44,10 +44,9 @@ void loop()
     float fsr_2Force = fsr_2.getForce();
     Serial.print(F("Force: ")); Serial.print(fsr_2Force); Serial.println(F(" [g]"));
 
-  
     float fsr_3Force = fsr_3.getForce();
     Serial.print(F("Force: ")); Serial.print(fsr_3Force); Serial.println(F(" [g]"));
 
-
+    delay(5000);
     
 }
